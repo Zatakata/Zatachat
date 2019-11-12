@@ -1,0 +1,171 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #00b894, #55efc4);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+#logIn, #registration {
+    display: none;
+}
+
+.entrance label {
+    margin-right: 15px;
+    padding-bottom: 3px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#logIn:checked ~ #registrationForm, #registration:checked ~ #loginForm {
+    display: none;
+}
+
+#logIn:checked + label, #registration:checked + label {
+    border-bottom: 2px solid #00b894;   
+}
+
+.entrance-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.entrance {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    min-height: 310px;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.entrance__form {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.entrance__form input {
+    margin-bottom: 20px;
+    padding: 8px 20px;
+}
+
+.entrance__form button {
+    padding: 10px 20px;
+    background-color: #55efc4;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.entrance__form button:hover {
+    background-color: #00b894;
+}
+
+/* Chat */
+
+.chat {
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat__nav {
+    padding: 5px 0;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat__logout {
+    color: #fff;
+}
+
+.chat__online {
+    color: #fff;
+}
+
+.chat__online b {
+    margin-left: 5px;
+    padding: 0 10px;
+    background-color: #fff;
+    color: #00b894;
+}
+
+.chat__area {
+    padding: 30px 0;
+    flex-grow: 1;
+    background-color: #00b894;
+    overflow-y: auto;
+}
+
+.chat__input {
+    height: 10%;
+    background-color: #2d3436;
+    display: flex;
+    align-items: center;
+}
+
+.chat__input-wrap  {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    max-width: 600px;
+}
+
+.send-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.message-input {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.message-input::placeholder {
+
+}
+
+/* message */
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px 30px;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 20px;    
+}
+
+.message__nickname {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.message__text {
+    margin: 0;
+}
+
+
+
